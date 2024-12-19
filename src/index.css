@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-optical-sizing: auto;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Mulish", sans-serif;
+}
+.links {
+  text-decoration: none;
+  font-size: 12px !important;
+  font-weight: 500;
+  color: #556575;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.links:hover {
+  color: #556575 !important;
+}
+@keyframes dashMove {
+  to {
+    stroke-dashoffset: -28; /* Moves the dashes */
+  }
+}
+
+svg path {
+  stroke: #020a19; /* Dark line color */
+  stroke-dasharray: 7; /* Dashed effect */
+  animation: dashMove 2s linear infinite; /* Animate dash movement */
+}
+.customDesign{
+color: #020a19 !important;
+text-decoration: none !important;
+}
